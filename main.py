@@ -59,8 +59,8 @@ test_ds = df_to_dataset(test, shuffle=False, batch_size=batch_size)
 
 model = tf.keras.Sequential([
     feature_layer,
-    layers.Dense(128, activation='relu'),
-    layers.Dense(128, activation='relu'),
+    layers.Dense(3, activation='relu'),
+    layers.Dense(4, activation='relu'),
     layers.Dropout(.1),
     layers.Dense(1)
 ])
